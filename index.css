@@ -29,13 +29,13 @@
     margin: 10px;
     margin-left: 100px;
   }
-.grid-wrapper>div:nth-child(3){
-  display: flex;
-  flex-flow: column wrap-reverse;
-  align-content: center;
-  justify-content: center;
+.grid-wrapper .beverageGrid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 40% 1fr 1fr 40%;
   border: solid white;
-  padding-bottom: 5px;
+  row-gap: 10px;
+  column-gap: 10px;
   grid-column: 2/3;
   grid-row: 1/3;
 }
@@ -46,23 +46,19 @@
   background-color: grey;
 
 }
-
 #juice-box{
-    justify-self: flex-end;
-    margin-bottom: 7px;
-    
-    
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
 #beer{
-    justify-self: flex-end;
-    
-    margin-bottom: 5px;
-    
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 #soda{
-
-    margin-top: 25px;
-    margin-right: 5px;
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
+
+
